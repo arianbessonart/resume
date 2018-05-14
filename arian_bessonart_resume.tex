@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in Latex
+% Author : Arian Bessonart
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+    \usepackage{latexsym}
+    \usepackage[empty]{fullpage}
+    \usepackage{titlesec}
+    \usepackage{marvosym}
+    \usepackage[usenames,dvipsnames]{color}
+    \usepackage{verbatim}
+    \usepackage{enumitem}
+    \usepackage[pdftex]{hyperref}
+    \usepackage{fancyhdr}
+
+
+    \pagestyle{fancy}
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+    % Adjust margins
+    \addtolength{\oddsidemargin}{-0.5in}
+    \addtolength{\evensidemargin}{-0.5in}
+    \addtolength{\textwidth}{1in}
+    \addtolength{\topmargin}{-.5in}
+    \addtolength{\textheight}{1.0in}
+
+    \urlstyle{same}
+
+    \raggedbottom
+    \raggedright
+    \setlength{\tabcolsep}{0in}
+
+    % Sections formatting
+    \titleformat{\section}{
+      \vspace{-4pt}\scshape\raggedright\large
+    }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+    %-------------------------
+    % Custom commands
+    \newcommand{\resumeItem}[2]{
+      \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+      }
+    }
+
+    \newcommand{\resumeSubheading}[4]{
+      \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+          \textbf{#1} & #2 \\
+          \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-5pt}
+    }
+
+    \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+    \renewcommand{\labelitemii}{$\circ$}
+
+    \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+    \newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+    %-------------------------------------------
+    %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+    \begin{document}
+
+    %----------HEADING-----------------
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{{\Large Arian Bessonart}} & Email : \href{mailto:arianbessonart@gmail.com}{arianbessonart@gmail.com}\\
+       & Mobile : (+598) 99 177 480 \\
+    \end{tabular*}
+
+
+    %-----------EDUCATION-----------------
+    \section{Education}
+      \resumeSubHeadingListStart
+        \resumeSubheading
+          {University, Facultad de Ingeniería, UDELAR}{Montevideo, UY}
+          {Engineer's degree, Software, Computer Engineering}{2007 -- Present}
+      \resumeSubHeadingListEnd
+
+    %-----------EXPERIENCE-----------------
+    \section{Experience}
+      \resumeSubHeadingListStart
+
+      \resumeSubheading
+        {Renxo}{Montevideo, UY}
+        {Senior Developer}{Jan 2018 - Present}
+        \resumeItemListStart
+          \resumeItem{Platform}
+            {Platform in charge of all the task related to the subscription, billing and sending to users through SMS, WAP, WEB. Java, Spring, Hibernate, Tomcat.}
+          \resumeItem{Integrations}
+            {Integration with carriers all over the world.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+          {PedidosYa}{Montevideo, UY}
+          {Team Leader}{Aug 2017 - Jan 2018}
+          \resumeItemListStart
+            \resumeItem{Feature Flag}
+              {Service for management dinamically features. Has the purposes of hide, enable or disable the feature during run time. Golang, NodeJS, React, Redis, AWS, Docker.}
+          \resumeItemListEnd
+
+          \resumeSubheading
+            {PedidosYa}{Montevideo, UY}
+            {Full-Stack Developer}{Dec 2016 - Aug 2017}
+            \resumeItemListStart
+              \resumeItem{Frontend}
+                {Develop, upgrade, and maintain the website as well internal tools. Grails, Javascript. }
+              \resumeItem{Backend}
+                {Implementation of new features, given supports to the mobile applications and the website, through Restful apis. Grails, MySQL, Redis, Memcache.}
+            \resumeItemListEnd
+
+          \resumeSubheading
+            {Binbit}{Montevideo, UY}
+            {Java Lead Developer}{Dec 2014 - Dec 2016}
+            \resumeItemListStart
+              \resumeItem{Billing/Sender/Proces Events System}
+                {Multithread system responsible for communication with carriers. Having as a priority to be fault tolerant and efficient, in order to perform a several daily operations. I was the System Owner. Java, Hibernate.}
+              \resumeItem{Frontend}
+                {Backoffice implementation. AngularJS, Java.}
+              \resumeItem{Development Process}
+                {Established and implemented CI/CD, code review practices.}
+            \resumeItemListEnd
+
+          \resumeSubheading
+            {Binbit}{Montevideo, UY}
+            {Backend Developer}{May 2013 - Dec 2014}
+            \resumeItemListStart
+              \resumeItem{Billing and Sender systems}
+                {Maintaince and extension of the most critics systems of the company. Python, PostgreSQL.}
+              \resumeItem{Integrations}
+                {Integration with carriers all over the world.}
+            \resumeItemListEnd
+
+          \resumeSubheading
+            {Axxiome}{Montevideo, UY}
+            {Java Developer}{Sept 2012 - May 2013}
+            \resumeItemListStart
+              \resumeItem{Mobiliser}
+                {Electronic wallet, own by Sybase. The task consisted of extending the framework for clients purposes. Java, Spring, Oracle.}
+              \resumeItem{Aplicaciones Moviles}
+                {Implemented bank mobile applications, using PhoneGap.}
+            \resumeItemListEnd
+
+          \resumeSubheading
+          {Mvd Technlogies}{Montevideo, UY}
+          {Junior Developer}{Aug 2011 - Sept 2012}
+          \resumeItemListStart
+            \resumeItem{Multiples projects}
+              {Web developer using .NET technologies.}
+
+        \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+
+    %-----------PROJECTS-----------------
+    \section{Projects}
+      \resumeSubHeadingListStart
+        \resumeSubItem{\href{https://github.com/arianbessonart/pg-dev}{pg-dev}}
+          {Open source atom plugin for PostgreSQL developers.}
+      \resumeSubHeadingListEnd
+
+    %--------PROGRAMMING SKILLS------------
+    \section{Programming Skills}
+     \resumeSubHeadingListStart
+       \item{
+         \textbf{Languages}{: NodeJS, Java, Javascript, Go, SQL}
+         \hfill
+         \textbf{Technologies}{: React, AWS, Redis, PostgreSQL, Docker}
+       }
+     \resumeSubHeadingListEnd
+    %-------------------------------------------
+    \end{document}

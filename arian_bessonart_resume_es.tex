@@ -1,0 +1,183 @@
+%-------------------------
+% Resume in Latex
+% Author : Arian Bessonart
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+    \usepackage{latexsym}
+    \usepackage[empty]{fullpage}
+    \usepackage{titlesec}
+    \usepackage{marvosym}
+    \usepackage[usenames,dvipsnames]{color}
+    \usepackage{verbatim}
+    \usepackage{enumitem}
+    \usepackage[pdftex]{hyperref}
+    \usepackage{fancyhdr}
+
+
+    \pagestyle{fancy}
+    \fancyhf{} % clear all header and footer fields
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt}
+    \renewcommand{\footrulewidth}{0pt}
+
+    % Adjust margins
+    \addtolength{\oddsidemargin}{-0.5in}
+    \addtolength{\evensidemargin}{-0.5in}
+    \addtolength{\textwidth}{1in}
+    \addtolength{\topmargin}{-.5in}
+    \addtolength{\textheight}{1.0in}
+
+    \urlstyle{same}
+
+    \raggedbottom
+    \raggedright
+    \setlength{\tabcolsep}{0in}
+
+    % Sections formatting
+    \titleformat{\section}{
+      \vspace{-4pt}\scshape\raggedright\large
+    }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+    %-------------------------
+    % Custom commands
+    \newcommand{\resumeItem}[2]{
+      \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+      }
+    }
+
+    \newcommand{\resumeSubheading}[4]{
+      \vspace{-1pt}\item
+        \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+          \textbf{#1} & #2 \\
+          \textit{\small#3} & \textit{\small #4} \\
+        \end{tabular*}\vspace{-5pt}
+    }
+
+    \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+    \renewcommand{\labelitemii}{$\circ$}
+
+    \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+    \newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+    %-------------------------------------------
+    %%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+    \begin{document}
+
+    %----------HEADING-----------------
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{{\Large Arian Bessonart}} & Email : \href{mailto:arianbessonart@gmail.com}{arianbessonart@gmail.com}\\
+       & Tel\'efono : (+598) 99 177 480 \\
+    \end{tabular*}
+
+
+    %-----------EDUCATION-----------------
+    \section{Educaci\'on}
+      \resumeSubHeadingListStart
+        \resumeSubheading
+          {Universidad, Facultad de Ingeniería, UDELAR}{Montevideo, UY}
+          {Ingeniería en Computaci\'on}{2007 -- Presente}
+      \resumeSubHeadingListEnd
+
+
+    %-----------EXPERIENCE-----------------
+    \section{Experiencia}
+      \resumeSubHeadingListStart
+
+      \resumeSubheading
+        {Renxo}{Montevideo, UY}
+        {Senior Developer}{Ene 2018 - Presente}
+        \resumeItemListStart
+          \resumeItem{Platforma}
+            {Plataforma encargada de todas las tareas relacionada con la suscripci\'on, cobro y env\'io de mensajes a usuarios a trav\'es de SMS, WAP, WEB. Java, Spring, Hibernate, Tomcat.}
+          \resumeItem{Integraciones}
+            {Integraci\'on con operadoras de todo el mundo.}
+        \resumeItemListEnd
+
+      \resumeSubheading
+        {PedidosYa}{Montevideo, UY}
+        {Team Leader}{Ago 2017 - Ene 2018}
+        \resumeItemListStart
+          \resumeItem{Feature Flag}
+            {Es un servicio para el manipulaci\'on de features de forma din\'amica, de forma de poder apagar/prender o realizar lanzamientos progresivos de una funcionalidad. Golang, NodeJS, React, Redis, AWS, Docker.}
+        \resumeItemListEnd
+
+        \resumeSubheading
+          {PedidosYa}{Montevideo, UY}
+          {Full-Stack Developer}{Dic 2016 - Ago 2017}
+          \resumeItemListStart
+            \resumeItem{Frontend}
+              {Desarrollo, mejora y mantenimiento del sitio web, as\'i tambi\'en de herramientas internas. Grails, Javascript.}
+              {Integr\'e equipo de producto desarrollando soluciones tanto para el sitio web como para herramientas internas. Grails, Javascript.}
+            \resumeItem{Backend}
+              {Implementaci\'on de nuevas funcionalidades, dandole soporte a las aplicaciones moviles y a la web, a trav\'es de apis Restful. Grails, MySQL, Redis, Memcache.}
+          \resumeItemListEnd
+
+        \resumeSubheading
+          {Binbit}{Montevideo, UY}
+          {Java Lead Developer}{Dic 2014 - Dic 2016}
+          \resumeItemListStart
+            \resumeItem{Sistema de Cobro y Env\'io}
+              {Sistema multihilo responsable de la comunicaci\'on con clientes externos. Teniendo como prioridad ser tolerante a fallas y eficiente, de forma de poder realizar un gran conjunto de operaciones diarias. Cumpl\'i con el rol de system owner Java}
+            \resumeItem{Procesador de Eventos}
+              {Sistema multihilo encargado de procesar millones de eventos diarios. Tareas de an\'alisis, dise\~no e implmentación de la soluci\'on. Cumpl\'i con el rol de system owner. Java, PostgreSQL}
+            \resumeItem{Interfaz}
+              {Interfaz con el fin de monitorear el correcto funcionamiento de los sistemas cr\'iticos. AngularJS, Java, EJB.}
+            \resumeItem{Proceso de Desarrollo}
+              {Incorpor\'e al equipo las pr\'acticas de CI (Continuous Integration), CD (Continuous Deployment), Code Review. Esto gener\'o un impacto positivo al equipo, tanto para el conocimiento general, estandarización y salud del co\'odigo}
+          \resumeItemListEnd
+
+        \resumeSubheading
+          {Binbit}{Montevideo, UY}
+          {Backend Developer}{May 2013 - Dic 2014}
+          \resumeItemListStart
+            \resumeItem{Sistema de Cobro y Env\'io}
+              {Mantenci\'on y extenci\'on de los sistemas m\'as cr\'iticos de la empresa. Python, PostgreSQL.}
+          \resumeItemListEnd
+
+        \resumeSubheading
+          {Axxiome}{Montevideo, UY}
+          {Java Developer}{Set 2012 - May 2013}
+          \resumeItemListStart
+            \resumeItem{Proyecto Mobiliser}
+              {Billetera electr\'onica, implementada por Sybase. La tarea consist\'ia en extender la herramienta para satisfacer las distintas necesidades de los clientes. Java, Spring, Oracle.}
+            \resumeItem{Aplicaciones Moviles}
+              {Implementaci\'on de aplicaciones bancarias moviles utilizando PhoneGap.}
+          \resumeItemListEnd
+
+          \resumeSubheading
+          {Mvd Technlogies}{Montevideo, UY}
+          {Developer}{Ago 2011 - Set 2012}
+          \resumeItemListStart
+            \resumeItem{Multiples Proyectos}
+              {Desarrollo web, creando y manteniendo multiples aplicaciones. .NET, SQLServer}
+          \resumeItemListEnd
+      \resumeSubHeadingListEnd
+
+
+    %-----------PROJECTS-----------------
+    \section{Proyectos}
+      \resumeSubHeadingListStart
+        \resumeSubItem{\href{https://github.com/arianbessonart/pg-dev}{pg-dev}}
+          {Open source atom plugin para el desarrollo de Stored Procesdures de PostgreSQL.}
+      \resumeSubHeadingListEnd
+
+    %--------PROGRAMMING SKILLS------------
+    \section{Habilidades}
+     \resumeSubHeadingListStart
+       \item{
+         \textbf{Lenguajes}{: NodeJS, Java, Javascript, Golang, SQL}
+         \hfill
+         \textbf{Tecnolog\'ias}{: React, AWS, Redis, PostgreSQL, Docker}
+       }
+     \resumeSubHeadingListEnd
+    %-------------------------------------------
+    \end{document}

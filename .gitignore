@@ -1,0 +1,8 @@
+*.aux
+*.log
+.vscode
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+__latexindent_temp.tex
