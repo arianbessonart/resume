@@ -39,13 +39,19 @@
     % Sections formatting
     \titleformat{\section}{
       \vspace{-4pt}\scshape\raggedright\large
-    }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+    }{}{1em}{}[\color{black}\titlerule \vspace{-5pt}]
 
     %-------------------------
     % Custom commands
     \newcommand{\resumeItem}[2]{
       \item\small{
         \textbf{#1}{: #2 \vspace{-2pt}}
+      }
+    }
+
+    \newcommand{\workItem}[1]{
+      \item\small{
+        { #1 \vspace{-2pt}}
       }
     }
 
@@ -78,13 +84,12 @@
        & Mobile : (+598) 99 177 480 \\
     \end{tabular*}
 
-
     %-----------EDUCATION-----------------
     \section{Education}
       \resumeSubHeadingListStart
         \resumeSubheading
           {University, Facultad de Ingeniería, UDELAR}{Montevideo, UY}
-          {Engineer's degree, Software, Computer Engineering}{2007 -- Present}
+          {Engineer's degree, Software, Computer Engineering}{2007 -- 2015}
       \resumeSubHeadingListEnd
 
     %-----------EXPERIENCE-----------------
@@ -92,75 +97,82 @@
       \resumeSubHeadingListStart
 
       \resumeSubheading
-        {Renxo}{Montevideo, UY}
-        {Senior Developer}{Jan 2018 - Present}
+        {Austin Software}{Montevideo, UY}
+        {Technical Architect}{March 2019 - Present}
         \resumeItemListStart
-          \resumeItem{Platform}
-            {Platform in charge of all the task related to the subscription, billing and sending to users through SMS, WAP, WEB. Java, Spring, Hibernate, Tomcat.}
-          \resumeItem{Integrations}
-            {Integration with carriers all over the world.}
+          \workItem
+          {Defines product requirements and creates high-level architectural specifications, ensuring feasibility and functionality with existing 10 platforms}
+          \workItem{Creates solutions architecture, algorithms, and designs for solutions that scale to the customers' business requirements}
+          \workItem
+          {Developed and created a website builder. Node.js, React, Kubernetes, GCP}
         \resumeItemListEnd
 
         \resumeSubheading
-          {PedidosYa}{Montevideo, UY}
-          {Team Leader}{Aug 2017 - Jan 2018}
+          {Renxo}{Montevideo, UY}
+          {Senior Developer}{Jan 2018 - March 2019}
           \resumeItemListStart
-            \resumeItem{Feature Flag}
-              {Service for management dinamically features. Has the purposes of hide, enable or disable the feature during run time. Golang, NodeJS, React, Redis, AWS, Docker.}
+            \workItem
+              {Maintaining and updating a CMS, which provides services subscription through multiple carriers in South America. It uses Java and tomcat to implement a RESTful API which is connected to by the front end which is a web application written in JavaScript and HTML5.}
           \resumeItemListEnd
 
-          \resumeSubheading
-            {PedidosYa}{Montevideo, UY}
-            {Full-Stack Developer}{Dec 2016 - Aug 2017}
-            \resumeItemListStart
-              \resumeItem{Frontend}
-                {Develop, upgrade, and maintain the website as well internal tools. Grails, Javascript. }
-              \resumeItem{Backend}
-                {Implementation of new features, given supports to the mobile applications and the website, through Restful apis. Grails, MySQL, Redis, Memcache.}
-            \resumeItemListEnd
+        \resumeSubheading
+          {PedidosYa}{Montevideo, UY}
+          {Technical Leader}{Aug 2017 - Jan 2018}
+          \resumeItemListStart
+            \workItem
+              {Service for management dinamically features. Has the purposes of hide, enable or disable the feature during run time. Golang, Node.js, React, Redis, AWS, Docker.}
+          \resumeItemListEnd
 
-          \resumeSubheading
-            {Binbit}{Montevideo, UY}
-            {Java Lead Developer}{Dec 2014 - Dec 2016}
-            \resumeItemListStart
-              \resumeItem{Billing/Sender/Proces Events System}
-                {Multithread system responsible for communication with carriers. Having as a priority to be fault tolerant and efficient, in order to perform a several daily operations. I was the System Owner. Java, Hibernate.}
-              \resumeItem{Frontend}
-                {Backoffice implementation. AngularJS, Java.}
-              \resumeItem{Development Process}
-                {Established and implemented CI/CD, code review practices.}
-            \resumeItemListEnd
+        \resumeSubheading
+          {PedidosYa}{Montevideo, UY}
+          {Full-Stack Developer}{Dec 2016 - Aug 2017}
+          \resumeItemListStart
+            \workItem
+              {Maintained, fine-tuned, and optimized system architecture through outstanding expertise in application installation, configuration, integration and administration.}
+            \workItem
+              {Implemented new features, given supports to the mobile applications and the website, through RESTful API. Grails, MySQL, Redis, Memcached.}
+            \workItem{Closely monitored production systems to ensure consistently flawless performance.}
+          \resumeItemListEnd
 
-          \resumeSubheading
-            {Binbit}{Montevideo, UY}
-            {Backend Developer}{May 2013 - Dec 2014}
-            \resumeItemListStart
-              \resumeItem{Billing and Sender systems}
-                {Maintaince and extension of the most critics systems of the company. Python, PostgreSQL.}
-              \resumeItem{Integrations}
-                {Integration with carriers all over the world.}
-            \resumeItemListEnd
+        \resumeSubheading
+          {Binbit}{Montevideo, UY}
+          {Java Lead Developer}{Dec 2014 - Dec 2016}
+          \resumeItemListStart
+            \workItem
+              {Multithread system responsible for communication with carriers. Having as a priority to be fault tolerant and efficient, in order to perform a several daily operations. System Owner role. Java, Hibernate.}
+            \workItem
+              {Backoffice implementation. AngularJS, Java.}
+            \workItem
+              {Established and implemented robust development process, using CI/CD and code review practices.}
+          \resumeItemListEnd
 
-          \resumeSubheading
-            {Axxiome}{Montevideo, UY}
-            {Java Developer}{Sept 2012 - May 2013}
-            \resumeItemListStart
-              \resumeItem{Mobiliser}
-                {Electronic wallet, own by Sybase. The task consisted of extending the framework for clients purposes. Java, Spring, Oracle.}
-              \resumeItem{Aplicaciones Moviles}
-                {Implemented bank mobile applications, using PhoneGap.}
-            \resumeItemListEnd
+        \resumeSubheading
+          {Binbit}{Montevideo, UY}
+          {Backend Developer}{May 2013 - Dec 2014}
+          \resumeItemListStart
+            \workItem
+              {Maintaince and extension of the most critics systems of the company. Python, PostgreSQL.}
+          \resumeItemListEnd
 
-          \resumeSubheading
+        \resumeSubheading
+          {Axxiome}{Montevideo, UY}
+          {Java Developer}{Sept 2012 - May 2013}
+          \resumeItemListStart
+            \workItem
+              {Electronic wallet, own by Sybase. The task consisted of extending the framework for clients purposes. Java, Spring, Oracle.}
+            \workItem
+              {Implemented bank mobile applications, using PhoneGap.}
+          \resumeItemListEnd
+
+        \resumeSubheading
           {Mvd Technlogies}{Montevideo, UY}
           {Junior Developer}{Aug 2011 - Sept 2012}
           \resumeItemListStart
-            \resumeItem{Multiples projects}
+            \workItem
               {Web developer using .NET technologies.}
+          \resumeItemListEnd
 
-        \resumeItemListEnd
       \resumeSubHeadingListEnd
-
 
     %-----------PROJECTS-----------------
     \section{Projects}
@@ -173,9 +185,9 @@
     \section{Programming Skills}
      \resumeSubHeadingListStart
        \item{
-         \textbf{Languages}{: NodeJS, Java, Javascript, Go, SQL}
+         \textbf{Languages}{: Java, Javascript, Go, Python, SQL}
          \hfill
-         \textbf{Technologies}{: React, AWS, Redis, PostgreSQL, Docker}
+         \textbf{Technologies}{: AWS, Kubernetes, PostgreSQL, Docker}
        }
      \resumeSubHeadingListEnd
     %-------------------------------------------
